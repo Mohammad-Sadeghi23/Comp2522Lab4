@@ -7,9 +7,10 @@ package ca.bcit.comp2522.lab04;
  * @author Justin Cardas
  * @author Armaan Brar
  * @author Mohammad Sadeghi
+ * @author Brownie Tran
  * @version 25.01
  */
-public class Date
+public class Date implements Printable
 {
     private static final int EARLIEST_SUPPORTED_YEAR;
     private static final int CURRENT_YEAR;
@@ -447,5 +448,11 @@ public class Date
         humanReadableDate.append(this.year);
 
         return humanReadableDate.toString();
+    }
+
+    @Override
+    public void display()
+    {
+
     }
 }
