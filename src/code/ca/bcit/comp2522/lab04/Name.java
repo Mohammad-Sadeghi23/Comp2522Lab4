@@ -9,7 +9,7 @@ package ca.bcit.comp2522.lab04;
  */
 public class Name implements Printable
 {
-    private final int MAX_NAME_CHAR = 50;
+    private final static int MAX_NAME_CHAR = 50;
 
     private final String firstName;
     private final String lastName;
@@ -21,7 +21,8 @@ public class Name implements Printable
      * @param firstName given first name
      * @param lastName given last name
      */
-    public Name(final String firstName, final String lastName)
+    public Name(final String firstName,
+                final String lastName)
     {
         validateName(firstName);
         validateName(lastName);
@@ -40,7 +41,10 @@ public class Name implements Printable
      */
     private void validateName(final String name)
     {
-        if(name == null || name.isEmpty() || name.length() > MAX_NAME_CHAR)
+        if(name == null ||
+           name.isEmpty() ||
+           name.length() >
+           MAX_NAME_CHAR)
         {
             throw new IllegalArgumentException("bad name: " + name);
         }
@@ -56,10 +60,45 @@ public class Name implements Printable
         StringBuilder fullName;
         fullName = new StringBuilder();
 
-        fullName.append(firstName);
+        fullName.append(this.firstName);
         fullName.append(" ");
-        fullName.append(lastName);
+        fullName.append(this.lastName);
 
         System.out.println(fullName);
+    }
+
+    /**
+     * Getter for person's first name
+     * @return person's first name
+     */
+    public String getFirstName()
+    {
+        return this.firstName;
+    }
+
+    /**
+     * Getter for person's last name
+     * @return person's last name
+     */
+    public String getLastName()
+    {
+        return this.lastName;
+    }
+
+    /**
+     * Provides the person's full name in one string.
+     *
+     * @return full name of person in one string
+     */
+    public String getFullName()
+    {
+        final StringBuilder fullName;
+        fullName = new StringBuilder();
+
+        fullName.append(this.firstName);
+        fullName.append(" ");
+        fullName.append(this.lastName);
+
+        return fullName.toString();
     }
 }

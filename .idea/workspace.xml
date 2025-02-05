@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f74068a1-15ab-4966-81bb-f11c48eaaaab" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/code/ca/bcit/comp2522/lab04/Date.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/ca/bcit/comp2522/lab04/Date.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/code/ca/bcit/comp2522/lab04/Name.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/ca/bcit/comp2522/lab04/Name.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code/ca/bcit/comp2522/lab04/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/ca/bcit/comp2522/lab04/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,18 +26,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Mohammad-Sadeghi23"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Mohammad-Sadeghi23&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Mohammad-Sadeghi23/Comp2522Lab4.git",
-    "accountId": "612ba78a-f93d-4157-9648-acef3ac9acb6"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Mohammad-Sadeghi23/Comp2522Lab4.git&quot;,
+    &quot;accountId&quot;: &quot;612ba78a-f93d-4157-9648-acef3ac9acb6&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -48,6 +48,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Application.Person.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
@@ -101,7 +102,8 @@
       <updated>1738363361471</updated>
       <workItem from="1738363363330" duration="1031000" />
       <workItem from="1738364513167" duration="372000" />
-      <workItem from="1738719497210" duration="2419000" />
+      <workItem from="1738719497210" duration="9578000" />
+      <workItem from="1738730452124" duration="172000" />
     </task>
     <servers />
   </component>
