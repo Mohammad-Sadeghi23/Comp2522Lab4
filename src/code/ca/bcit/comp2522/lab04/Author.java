@@ -49,6 +49,16 @@ public class Author extends Person implements Printable
     }
 
     /**
+     * Return genre as a String
+     *
+     * @return genre
+     */
+    protected String getGenre()
+    {
+        return genre;
+    }
+
+    /**
      * Displays the author's information, including their genre.
      */
     @Override
