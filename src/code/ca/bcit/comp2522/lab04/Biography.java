@@ -10,7 +10,7 @@ package ca.bcit.comp2522.lab04;
  */
 public class Biography extends Book implements Printable
 {
-    private Person subject;
+    private final Person subject;
 
     /**
      * Constructs a Biography object with a title, publication year, author, and subject.
