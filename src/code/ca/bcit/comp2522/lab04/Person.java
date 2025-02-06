@@ -106,7 +106,7 @@ public class Person implements Comparable<Person>, Printable, Reversible
             details.append(" ");
             details.append(dateOfDeath.getYyyyMmDd());
         }
-        System.out.println(details);
+        System.out.println(details.toString());
     }
 
     /**
