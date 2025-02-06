@@ -5,19 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f74068a1-15ab-4966-81bb-f11c48eaaaab" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/code/ca/bcit/comp2522/lab04/Author.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/code/ca/bcit/comp2522/lab04/Autobiography.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/code/ca/bcit/comp2522/lab04/Biography.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/code/ca/bcit/comp2522/lab04/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/code/ca/bcit/comp2522/lab04/Date.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/code/ca/bcit/comp2522/lab04/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/code/ca/bcit/comp2522/lab04/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/code/ca/bcit/comp2522/lab04/Printable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/code/ca/bcit/comp2522/lab04/Reversible.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Lab 4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Lab 4.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/code/Name.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/ca/bcit/comp2522/lab04/Name.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +48,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -84,8 +73,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.23654.153" />
-        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-IU-243.23654.153" />
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.218" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.218" />
       </set>
     </attachedChunks>
   </component>
@@ -104,5 +93,28 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
