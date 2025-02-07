@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f74068a1-15ab-4966-81bb-f11c48eaaaab" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/code/ca/bcit/comp2522/lab04/Autobiography.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/ca/bcit/comp2522/lab04/Autobiography.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/code/ca/bcit/comp2522/lab04/Biography.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/ca/bcit/comp2522/lab04/Biography.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code/ca/bcit/comp2522/lab04/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/ca/bcit/comp2522/lab04/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code/ca/bcit/comp2522/lab04/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/ca/bcit/comp2522/lab04/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +41,7 @@
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "C:/Users/Moham/IdeaProjects/COMP-2522-Lab04/src/code",
-    "last_opened_file_path": "C:/Users/tkngu/OneDrive/Documents/Canada/BCIT stuffs/CST matters/Term 2/COMP 2522/Labs/Lab 4",
+    "last_opened_file_path": "C:/Users/tkngu/OneDrive/Documents/Canada/BCIT stuffs/CST matters/Term 2/COMP 2522/Labs/Lab 3/src/code/ca/bcit/comp2522/idevice/Main.java",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
