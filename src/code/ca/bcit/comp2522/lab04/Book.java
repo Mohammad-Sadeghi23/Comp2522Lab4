@@ -6,6 +6,7 @@ package ca.bcit.comp2522.lab04;
  *
  * @author Mohammad Sadeghi
  * @author Brownie Tran
+ * @version 1.0
  */
 public class Book implements Comparable<Book>, Printable, Reversible
 {

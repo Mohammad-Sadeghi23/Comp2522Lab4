@@ -1,10 +1,22 @@
 package ca.bcit.comp2522.lab04;
 
 /**
+ * The Main class serves as the entry point for the application.
+ * It demonstrates the creation and comparison of Book, Biography,
+ * and Autobiography objects.
  *
+ * @author Mohammad Sadeghi
+ * @author Brownie Tran
+ * @version 1.0
  */
 public class Main
 {
+    /**
+     * The main method initializes various books, biographies, and autobiographies,
+     * performs comparisons, and prints their details.
+     *
+     * @param args command-line arguments (not used)
+     */
     public static void main(final String[] args)
     {
         // Books
