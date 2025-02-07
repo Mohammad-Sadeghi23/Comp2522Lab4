@@ -24,7 +24,10 @@ public class Author extends Person implements Printable
      * @param genre The genre the author writes in.
      * @throws IllegalArgumentException if the genre is null, empty, or exceeds the max character limit.
      */
-    public Author(final Date dateOfBirth, final Date dateOfDeath, final Name name, final String genre)
+    public Author(final Date dateOfBirth,
+                  final Date dateOfDeath,
+                  final Name name,
+                  final String genre)
     {
         super(dateOfBirth, dateOfDeath, name);
         validateGenre(genre);
