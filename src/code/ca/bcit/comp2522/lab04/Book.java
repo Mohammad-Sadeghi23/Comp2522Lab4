@@ -24,9 +24,9 @@ public class Book implements Comparable<Book>, Printable, Reversible
      * @param yearPublished publishing year
      * @param author author of book
      */
-    Book(String title,
-         Date yearPublished,
-         Author author)
+    Book(final String title,
+         final Date yearPublished,
+         final Author author)
     {
         validateTitle(title);
         validateAuthor(author);
