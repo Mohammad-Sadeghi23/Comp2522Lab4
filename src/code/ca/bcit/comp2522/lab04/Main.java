@@ -201,16 +201,16 @@ public class Main
 
         // 1. Compare Books by Publication Year (Older books are "larger")
         System.out.println("Comparing Books by Publication Year:");
-        System.out.println("Is '1984' older than 'To Kill a Mockingbird'? " + (book1984.compareTo(bookMockingbird) > 0));
-        System.out.println("Is 'Pride and Prejudice' older than 'The Great Gatsby'? " + (bookPride.compareTo(bookGatsby) > 0));
-        System.out.println("Is 'Moby-Dick' newer than '1984'? " + (bookMoby.compareTo(book1984) < 0));
+        System.out.println("Is '1984' older than 'To Kill a Mockingbird'? " + (book1984.compareTo(bookMockingbird) < 0));
+        System.out.println("Is 'Pride and Prejudice' older than 'The Great Gatsby'? " + (bookPride.compareTo(bookGatsby) < 0));
+        System.out.println("Is 'Moby-Dick' newer than '1984'? " + (bookMoby.compareTo(book1984) > 0));
         System.out.println();
 
         // 2. Compare Authors by Birthdate (Older authors are "larger")
         System.out.println("Comparing Authors by Birthdate:");
-        System.out.println("Is Jane Austen older than George Orwell? " + (janeA.compareTo(georgeO) > 0));
-        System.out.println("Is Harper Lee older than F. Scott Fitzgerald? " + (harperL.compareTo(scottF) > 0));
-        System.out.println("Is Herman Melville older than George Orwell? " + (hermanM.compareTo(georgeO) > 0));
+        System.out.println("Is Jane Austen older than George Orwell? " + (janeA.compareTo(georgeO) < 0));
+        System.out.println("Is Harper Lee older than F. Scott Fitzgerald? " + (harperL.compareTo(scottF) < 0));
+        System.out.println("Is Herman Melville older than George Orwell? " + (hermanM.compareTo(georgeO) < 0));
         System.out.println();
 
         // 3. Compare Biographies by Subject (Two biographies are equal if they are about the same person)
