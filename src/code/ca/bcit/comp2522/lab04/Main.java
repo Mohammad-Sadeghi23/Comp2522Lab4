@@ -1,91 +1,194 @@
 package ca.bcit.comp2522.lab04;
 
+/**
+ *
+ */
 public class Main
 {
-    public static void main(String[] args)
+    public static void main(final String[] args)
     {
-        Book book1;
-        Book book2;
-        Book book3;
-        Book book4;
-        Book book5;
+        // Books
 
-        Biography biography1;
-        Biography biography2;
-        Biography biography3;
-        Biography biography4;
-        Biography biography5;
+        // Creates Name, Date, Author, and Book objects for "1984" by George Orwell
+        Name georgeOName = new Name("George", "Orwell");
+        Date georgeOBirthdate = new Date(25, 6, 1903);
+        Date georgeODeathdate = new Date(21, 1, 1950);
+        Date publishedDate1949 = new Date(8, 6, 1949);
+        Author georgeO = new Author(georgeOBirthdate, georgeODeathdate, georgeOName, "Dystopian fiction");
+        Book book1984 = new Book("1984", publishedDate1949, georgeO);
 
-        Autobiography autobiography1;
-        Autobiography autobiography2;
-        Autobiography autobiography3;
-        Autobiography autobiography4;
-        Autobiography autobiography5;
+        // Creates Name, Date, Author, and Book objects for "To Kill a Mockingbird" by Harper Lee
+        Name harperLName = new Name("Harper", "Lee");
+        Date harperLBirthdate = new Date(28, 4, 1926);
+        Date harperLDeathdate = new Date(19, 2, 2016);
+        Date publishedDateMocking = new Date(11, 7, 1960);
+        Author harperL = new Author(harperLBirthdate, harperLDeathdate, harperLName, "Literature fiction");
+        Book bookMockingbird = new Book("To Kill a Mockingbird", publishedDateMocking, harperL);
 
-        Author author1;
-        Author author2;
-        Author author3;
-        Author author4;
-        Author author5;
+        // Creates Name, Date, Author, and Book objects for "Pride and Prejudice" by Jane Austen
+        Name janeAName = new Name("Jane", "Austen");
+        Date janeABirthdate = new Date(16, 12, 1775);
+        Date janeADeathdate = new Date(18, 7, 1817);
+        Date publishedDatePride = new Date(28, 1, 1813);
+        Author janeA = new Author(janeABirthdate, janeADeathdate, janeAName, "Romance Fiction");
+        Book bookPride = new Book("Pride and Prejudice", publishedDatePride, janeA);
 
-        Name name1;
-        Name name2;
-        Name name3;
-        Name name4;
-        Name name5;
+        // Creates Name, Date, Author, and Book objects for "The Great Gatsby" by F. Scott Fitzgerald
+        Name scottFName = new Name("F. Scott", "Fitzgerald");
+        Date scottFBirthdate = new Date(24, 9, 1896);
+        Date scottFDeathdate = new Date(21, 12, 1940);
+        Date publishedDateGatsby = new Date(10, 4, 1925);
+        Author scottF = new Author(scottFBirthdate, scottFDeathdate, scottFName, "Literary Fiction");
+        Book bookGatsby = new Book("The Great Gatsby", publishedDateGatsby, scottF);
 
-        Date dateOfBirth1;
-        Date dateOfBirth2;
-        Date dateOfBirth3;
-        Date dateOfBirth4;
-        Date dateOfBirth5;
+        // Creates Name, Date, Author, and Book objects for "Moby-Dick" by Herman Melville
+        Name hermanMName = new Name("Herman", "Melville");
+        Date hermanMBirthdate = new Date(1, 8, 1819);
+        Date hermanMDeathdate = new Date(28, 9, 1891);
+        Date publishedDateMoby = new Date(18, 10, 1851);
+        Author hermanM = new Author(hermanMBirthdate, hermanMDeathdate, hermanMName, "Adventure Fiction");
+        Book bookMoby = new Book("Moby-Dick", publishedDateMoby, hermanM);
 
-        Date dateOfDeath1;
-        Date dateOfDeath2;
-        Date dateOfDeath3;
-        Date dateOfDeath4;
-        Date dateOfDeath5;
 
-        Date yearPublished1;
-        Date yearPublished2;
-        Date yearPublished3;
-        Date yearPublished4;
-        Date yearPublished5;
+        // Biographies
 
-        name1 = new Name("George", "Orwell");
-        name2 = new Name("Harper", "Lee");
-        name3 = new Name("Jane", "Austen");
-        name4 = new Name("F.Scott", "Fitzgerald");
-        name5 = new Name("Herman", "Melville");
+        // Creates Name object for Robert Moses, date objects for his birthdate and death date,
+        // a Person object representing him, an Author object for Robert Caro,
+        // and a Biography object for "The Power Broker".
+        Name robertMName = new Name("Robert", "Moses");
+        Date robertMBirthdate = new Date(18, 12, 1888);
+        Date robertMDeathdate = new Date(29, 7, 1981);
+        Person robertMoses = new Person(robertMBirthdate, robertMDeathdate, robertMName);
 
-        dateOfBirth1 = new Date(25, 1, 1903);
-        dateOfBirth2 = new Date(28, 4, 1926);
-        dateOfBirth3 = new Date(16, 12, 1775);
-        dateOfBirth4 = new Date(24, 9, 1896);
-        dateOfBirth5 = new Date(1, 8, 1819);
+        Name robertCaroName = new Name("Robert", "Caro");
+        Date robertCaroBirthdate = new Date(30, 10, 1935);
+        Author robertCaro = new Author(robertCaroBirthdate, null, robertCaroName, "Biography");
 
-        dateOfDeath1 = new Date(21, 1, 1950);
-        dateOfDeath2 = new Date(19, 2, 2016);
-        dateOfDeath3 = new Date(18, 6, 1817);
-        dateOfDeath4 = new Date(21, 12, 1940);
-        dateOfDeath5 = new Date(28, 9, 1891);
+        Date publishedDatePowerBroker = new Date(16, 9, 1974);
+        Biography bioPowerBroker = new Biography("The Power Broker", publishedDatePowerBroker, robertCaro, robertMoses);
 
-        author1 = new Author(dateOfBirth1, dateOfDeath1, name1, "Dystopia");
-        author2 = new Author(dateOfBirth2, dateOfDeath2, name2, "Literature - Fiction");
-        author3 = new Author(dateOfBirth3, dateOfDeath3, name3, "Romantic Fiction");
-        author4 = new Author(dateOfBirth4, dateOfDeath4, name4, "Comedy - Fantasy");
-        author5 = new Author(dateOfBirth5, dateOfDeath5, name5, "Nautical Fiction");
 
-        yearPublished1 = new Date(8, 6, 1949);
-        yearPublished2 = new Date(11, 7, 1960);
-        yearPublished3 = new Date(28, 1, 1813);
-        yearPublished4 = new Date(10, 4, 1925);
-        yearPublished5 = new Date(18, 10, 1851);
+        // Creates Name object for Steve Jobs, date objects for his birthdate and death date,
+        // a Person object representing him, an Author object for Walter Isaacson,
+        // and a Biography object for "Steve Jobs".
+        Name steveJName = new Name("Steve", "Jobs");
+        Date steveJBirthdate = new Date(24, 2, 1955);
+        Date steveJDeathdate = new Date(5, 10, 2011);
+        Person steveJobs = new Person(steveJBirthdate, steveJDeathdate, steveJName);
 
-        book1 = new Book("1984", yearPublished1, author1);
-        book2 = new Book("To Kill a Mockingbird", yearPublished2, author2);
-        book3 = new Book("Pride and Prejudice", yearPublished3, author3);
-        book4 = new Book("The Great Gatsby", yearPublished4, author4);
-        book5 = new Book("Moby-Dick", yearPublished5, author5);
+        Name walterIName = new Name("Walter", "Isaacson");
+        Date walterIBirthdate = new Date(20, 5, 1952);
+        Author walterI = new Author(walterIBirthdate, null, walterIName, "Biography");
+
+        Date publishedDateSteveJobs = new Date(25, 10, 2011);
+        Biography bioSteveJobs = new Biography("Steve Jobs", publishedDateSteveJobs, walterI, steveJobs);
+
+
+        // Creates Name object for Winston Churchill, date objects for his birthdate and death date,
+        // a Person object representing him, an Author object for Martin Gilbert,
+        // and a Biography object for "Churchill: A Life".
+        Name winstonCName = new Name("Winston", "Churchill");
+        Date winstonCBirthdate = new Date(30, 11, 1874);
+        Date winstonCDeathdate = new Date(24, 1, 1965);
+        Person winstonChurchill = new Person(winstonCBirthdate, winstonCDeathdate, winstonCName);
+
+        Name martinGName = new Name("Martin", "Gilbert");
+        Date martinGBirthdate = new Date(25, 10, 1936);
+        Date martinGDeathdate = new Date(3, 2, 2015);
+        Author martinG = new Author(martinGBirthdate, martinGDeathdate, martinGName, "History");
+
+        Date publishedDateChurchill = new Date(21, 10, 1991);
+        Biography bioChurchill = new Biography("Churchill: A Life", publishedDateChurchill, martinG, winstonChurchill);
+
+
+        // Creates Name object for Alexander Hamilton, date objects for his birthdate and death date,
+        // a Person object representing him, an Author object for Ron Chernow,
+        // and a Biography object for "Alexander Hamilton".
+        Name alexanderHName = new Name("Alexander", "Hamilton");
+        Date alexanderHBirthdate = new Date(11, 1, 1755);
+        Date alexanderHDeathdate = new Date(12, 7, 1804);
+        Person alexanderHamilton = new Person(alexanderHBirthdate, alexanderHDeathdate, alexanderHName);
+
+        Name ronCName = new Name("Ron", "Chernow");
+        Date ronCBirthdate = new Date(3, 3, 1949);
+        Author ronC = new Author(ronCBirthdate, null, ronCName, "Biography");
+
+        Date publishedDateHamilton = new Date(26, 4, 2004);
+        Biography bioHamilton = new Biography("Alexander Hamilton", publishedDateHamilton, ronC, alexanderHamilton);
+
+
+        // Creates Name object for Albert Einstein, date objects for his birthdate and death date,
+        // a Person object representing him, and a Biography object for "Einstein: His Life and Universe"
+        // written by Walter Isaacson.
+        Name albertEName = new Name("Albert", "Einstein");
+        Date albertEBirthdate = new Date(14, 3, 1879);
+        Date albertEDeathdate = new Date(18, 4, 1955);
+        Person albertEinstein = new Person(albertEBirthdate, albertEDeathdate, albertEName);
+
+        Date publishedDateEinstein = new Date(10, 4, 2007);
+        Biography bioEinstein = new Biography("Einstein: His Life and Universe", publishedDateEinstein, walterI, albertEinstein);
+
+        // Autobiographies
+
+        // Creates Name object for Anne Frank, date objects for her birthdate and death date,
+        // an Author object for her, and an Autobiography object for "The Diary of a Young Girl".
+        Name anneFName = new Name("Anne", "Frank");
+        Date anneFBirthdate = new Date(12, 6, 1929);
+        Date anneFDeathdate = new Date(1, 3, 1945);
+        Author anneFrank = new Author(anneFBirthdate, anneFDeathdate, anneFName, "Memoir");
+
+        Date publishedDateDiary = new Date(25, 6, 1947);
+        Autobiography autoDiary = new Autobiography("The Diary of a Young Girl", publishedDateDiary, anneFrank);
+
+
+        // Creates Name object for Nelson Mandela, date objects for his birthdate and death date,
+        // an Author object for him, and an Autobiography object for "Long Walk to Freedom".
+        Name nelsonMName = new Name("Nelson", "Mandela");
+        Date nelsonMBirthdate = new Date(18, 7, 1918);
+        Date nelsonMDeathdate = new Date(5, 12, 2013);
+        Author nelsonMandela = new Author(nelsonMBirthdate, nelsonMDeathdate, nelsonMName, "Autobiography");
+
+        Date publishedDateMandela = new Date(12, 11, 1994);
+        Autobiography autoMandela = new Autobiography("Long Walk to Freedom", publishedDateMandela, nelsonMandela);
+
+
+        // Creates Name object for Mahatma Gandhi, date objects for his birthdate and death date,
+        // an Author object for him, and an Autobiography object for "The Story of My Experiments with Truth".
+        Name mahatmaGName = new Name("Mahatma", "Gandhi");
+        Date mahatmaGBirthdate = new Date(2, 10, 1869);
+        Date mahatmaGDeathdate = new Date(30, 1, 1948);
+        Author mahatmaGandhi = new Author(mahatmaGBirthdate, mahatmaGDeathdate, mahatmaGName, "Philosophy");
+
+        Date publishedDateGandhi = new Date(1, 1, 1927);
+        Autobiography autoGandhi = new Autobiography("The Story of My Experiments with Truth", publishedDateGandhi, mahatmaGandhi);
+
+
+        // Creates Name object for Maya Angelou, date objects for her birthdate and death date,
+        // an Author object for her, and an Autobiography object for "I Know Why the Caged Bird Sings".
+        Name mayaAName = new Name("Maya", "Angelou");
+        Date mayaABirthdate = new Date(4, 4, 1928);
+        Date mayaADeathdate = new Date(28, 5, 2014);
+        Author mayaAngelou = new Author(mayaABirthdate, mayaADeathdate, mayaAName, "Memoir");
+
+        Date publishedDateMaya = new Date(1, 4, 1969);
+        Autobiography autoMaya = new Autobiography("I Know Why the Caged Bird Sings", publishedDateMaya, mayaAngelou);
+
+
+        // Creates Name object for Malcolm X, date objects for his birthdate and death date,
+        // an Author object for him, and an Autobiography object for "The Autobiography of Malcolm X".
+        Name malcolmXName = new Name("Malcolm", "X");
+        Date malcolmXBirthdate = new Date(19, 5, 1925);
+        Date malcolmXDeathdate = new Date(21, 2, 1965);
+        Author malcolmX = new Author(malcolmXBirthdate, malcolmXDeathdate, malcolmXName, "Autobiography");
+
+        Date publishedDateMalcolmX = new Date(29, 10, 1965);
+        Autobiography autoMalcolmX = new Autobiography("The Autobiography of Malcolm X", publishedDateMalcolmX, malcolmX);
+
+
+        // Comparing & Printing
+
+
+
+
     }
 }
