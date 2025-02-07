@@ -187,8 +187,77 @@ public class Main
 
         // Comparing & Printing
 
+        // 1. Compare Books by Publication Year (Older books are "larger")
+        System.out.println("Comparing Books by Publication Year:");
+        System.out.println("Is '1984' older than 'To Kill a Mockingbird'? " + (book1984.compareTo(bookMockingbird) > 0));
+        System.out.println("Is 'Pride and Prejudice' older than 'The Great Gatsby'? " + (bookPride.compareTo(bookGatsby) > 0));
+        System.out.println("Is 'Moby-Dick' newer than '1984'? " + (bookMoby.compareTo(book1984) < 0));
+        System.out.println();
 
+        // 2. Compare Authors by Birthdate (Older authors are "larger")
+        System.out.println("Comparing Authors by Birthdate:");
+        System.out.println("Is Jane Austen older than George Orwell? " + (janeA.compareTo(georgeO) > 0));
+        System.out.println("Is Harper Lee older than F. Scott Fitzgerald? " + (harperL.compareTo(scottF) > 0));
+        System.out.println("Is Herman Melville older than George Orwell? " + (hermanM.compareTo(georgeO) > 0));
+        System.out.println();
 
+        // 3. Compare Biographies by Subject (Two biographies are equal if they are about the same person)
+        System.out.println("Comparing Biographies by Subject:");
+        System.out.println("Is 'Steve Jobs' biography about the same person as 'The Power Broker'? " + bioSteveJobs.equals(bioPowerBroker));
+        System.out.println("Is 'Alexander Hamilton' biography about the same person as 'Churchill: A Life'? " + bioHamilton.equals(bioChurchill));
+        System.out.println();
 
+        // 4. Printing Books, Biographies, and Autobiographies using the Printable Interface
+        System.out.println("Printing Book Details:\n");
+        book1984.display();
+        System.out.println();
+        bookMockingbird.display();
+        System.out.println();
+        bookPride.display();
+        System.out.println();
+        bookGatsby.display();
+        System.out.println();
+        bookMoby.display();
+        System.out.println();
+
+        System.out.println("Printing Biography Details:\n");
+        bioPowerBroker.display();
+        System.out.println();
+        bioSteveJobs.display();
+        System.out.println();
+        bioChurchill.display();
+        System.out.println();
+        bioHamilton.display();
+        System.out.println();
+        bioEinstein.display();
+        System.out.println();
+
+        System.out.println("Printing Autobiography Details:\n");
+        autoDiary.display();
+        System.out.println();
+        autoMandela.display();
+        System.out.println();
+        autoGandhi.display();
+        System.out.println();
+        autoMaya.display();
+        System.out.println();
+        autoMalcolmX.display();
+        System.out.println();
+
+        // 5. Print Titles & Names Backward using Reversible Interface
+        System.out.println("Printing Reversed Titles:\n");
+        System.out.println("1984 → " + book1984.backward());
+        System.out.println("To Kill a Mockingbird → " + bookMockingbird.backward());
+        System.out.println("Pride and Prejudice → " + bookPride.backward());
+        System.out.println("The Great Gatsby → " + bookGatsby.backward());
+        System.out.println("Moby-Dick → " + bookMoby.backward());
+        System.out.println();
+
+        System.out.println("Printing Reversed Author Names:");
+        System.out.println("George Orwell → " + georgeO.backward());
+        System.out.println("Harper Lee → " + harperL.backward());
+        System.out.println("Jane Austen → " + janeA.backward());
+        System.out.println("F. Scott Fitzgerald → " + scottF.backward());
+        System.out.println("Herman Melville → " + hermanM.backward());
     }
 }

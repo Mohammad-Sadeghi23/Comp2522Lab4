@@ -65,7 +65,7 @@ public class Date implements Printable
     static
     {
         // year range
-        EARLIEST_SUPPORTED_YEAR = 1800;
+        EARLIEST_SUPPORTED_YEAR = 1700;
         CURRENT_YEAR            = 2025;
 
         // month range

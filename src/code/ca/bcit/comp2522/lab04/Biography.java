@@ -82,7 +82,7 @@ public class Biography extends Book implements Printable
     public void display()
     {
         super.display();
-        System.out.println("Subject: ");
-        subject.display();
+        System.out.print("Subject: ");
+        this.subject.display();
     }
 }
